@@ -1,5 +1,5 @@
 html {
-    font-family: 'Manjari', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -7,13 +7,13 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
-    color: #ff006f;
+    font-size: 4rem;
+    color: #FE595E;
     margin: 0;
 }
 
 h2 {
-    margin: 0;
+    margin: 1%;
 }
 
 header {
@@ -29,17 +29,15 @@ nav a {
 }
 
 a {
-    color: #ff006f;
+    color: #FE595E;
 }
 
 #new-event {
     width: 100%;
-    background-color: #ff006f;
-    color: #fff;
-    border: 1px solid #ff006f;
-    border-radius: 5px;
+    background-color: #C0D8D6;
+    color: #17445C;
     font-size: 1.5rem;
-    height: 50px;
+    height: 80px;
     cursor: pointer;
 }
 
@@ -48,14 +46,14 @@ a {
 }
 
 .details-box {
-    border: 1px solid #ff006f;
+    border: 1px solid #C0D8D6;
     border-radius: 5px;
     margin: 10px 0;
-    padding: 10px;
+    padding: 20px;
 }
 
 .details-box a {
-    color: #000 !important;
+    color: #17445C !important;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
