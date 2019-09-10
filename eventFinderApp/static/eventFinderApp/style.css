@@ -59,6 +59,8 @@ a {
     justify-content: space-between;
 }
 
-.details-box a:hover {
-    text-decoration: underline;
+footer {
+    margin: 50px;
+    display: flex;
+    width: 100%;
 }
