@@ -9,7 +9,11 @@ class Event(models.Model):
     start_time = models.DateTimeField('start time')
     end_time = models.DateTimeField('end time')
     categories = models.ManyToManyField('Category', related_name='events')
+    def __str__(self):
+        return self.title
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
+    def __str__(self):
+        return self.name
     
