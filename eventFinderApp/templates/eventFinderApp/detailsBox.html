@@ -1,6 +1,7 @@
 <div class="details-box">
     <a href="{% url 'eventFinderApp:event' event.id %}">
         <h3>Event: {{ event.title }}</h3>
+        <p>Location: {{ event.location }}</p>
         <p>Venue: {{ event.venue }}</p>
         <p>Start: {{ event.start_time }}</p>
         <p>End: {{ event.end_time }}</p>

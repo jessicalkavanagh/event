@@ -5,15 +5,17 @@
 <h2>{{ event.title }}</h2>
 
 <ul>
-    <li<><p>Location: {{ event.location }}</p></li>
-    <li<><p>Venue: {{ event.venue }}</p></li>
-    <li<><p>Starts at: {{ event.start_time }}</p></li>
-    <li<><p>Ends at: {{ event.end_time }}</p></li>
+    <li><p>Location: {{ event.location }}</p></li>
+    <li><p>Venue: {{ event.venue }}</p></li>
+    <li><p>Starts at: {{ event.start_time }}</p></li>
+    <li><p>Ends at: {{ event.end_time }}</p></li>
+
+
+    <li><p>Best suited for: {% for event in event.categories.all %}</p></li>
+    {{ event.name }}</p></li>
+    {% endfor %}
+
 </ul>
 
-
-<p>Suited for: {% for event in event.categories.all %}</p>
-<p>{{ event.name }}</p>
-{% endfor %}
 
 {% endblock %}
