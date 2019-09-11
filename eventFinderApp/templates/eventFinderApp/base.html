@@ -5,26 +5,30 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>EventFinda</title>
+        <title>Free Event Seeker</title>
         <meta name="description" content="">
         <meta name="author" content="Hayley van Waas">
         <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{% static 'eventFinderApp/style.css' %}">
     </head>
 
     <body>
         <header>
             <div>
-                <h1>Event Seeker</h1>
-                <h2>Look for free events near you!</h2>
+                <h1>Eventseeker</h1>
+                <h2>The event guide.</h2>
+                <h3>Look for free events near you!</h3>
             </div>
             {% include './nav.html' %}
         </header>
 
         {% block content %}{% endblock %}
-        <footer>
-            <p>Copyright</p>
-        </footer>
+
     </body>
 
 </html>
+
+<footer>
+    Copyright 2019©
+</footer>

@@ -24,8 +24,9 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=200)),
                 ('location', models.CharField(max_length=200)),
-                ('start_time', models.DateTimeField(verbose_name='start time and date')),
-                ('end_time', models.DateTimeField(verbose_name='end time and date')),
+                ('start_date', models.DateTimeField(verbose_name='start date')),
+                ('start_time', models.DateTimeField(verbose_name='start time')),
+                ('end_time', models.DateTimeField(verbose_name='end time')),
             ],
         ),
     ]

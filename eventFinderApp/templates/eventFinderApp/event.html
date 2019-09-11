@@ -5,11 +5,12 @@
 <h2>{{ event.title }}</h2>
 
 <p>{{ event.location }}</p>
+<p>Date: {{ event.start_date }}</p>
 <p>Starts at: {{ event.start_time }}</p>
 <p>Ends at: {{ event.end_time }}</p>
 <p>Located at: {{ event.venue }}</p>
-{% for cat in event.categories.all %}
-<p>{{ cat.name }}</p>
+{% for event in event.categories.all %}
+<p>{{ event.name }}</p>
 {% endfor %}
 
 {% endblock %}

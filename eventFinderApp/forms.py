@@ -7,7 +7,8 @@ class EventForm(ModelForm):
         fields = [
             'title', 
             'venue', 
-            'location', 
+            'location',
+            'start_date', 
             'start_time',
             'end_time',
             'categories' 
