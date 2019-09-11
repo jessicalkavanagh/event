@@ -8,7 +8,6 @@ class EventForm(ModelForm):
             'title', 
             'venue', 
             'location',
-            'start_date',
             'start_time',
             'end_time',
             'categories',

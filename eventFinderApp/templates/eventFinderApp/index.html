@@ -2,14 +2,21 @@
 
 {% block content %}
 
-    <a href="{% url 'eventFinderApp:addevent' %}"> <button id="new-event">+ Create new event</button></a>
-    <h3>See what's on!</h3>
+
+    <h2 class="title">Upcoming events</h2>
     {% if events_list %}
         {% for event in events_list %}
             {% include "./detailsBox.html" with event=event %}
         {% endfor %}
+        <h2 class="title">Can't find what you're looking for?</h2>
+        
     {% else %}
         <p>No current events are available.</p>
     {% endif %}
 
+    <a href="{% url 'eventFinderApp:addevent' %}"> <button id="new-event">+ Add an new event</button></a>
+
+
 {% endblock %}
+
+

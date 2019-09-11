@@ -4,12 +4,15 @@
 
 <h2>{{ event.title }}</h2>
 
-<p>{{ event.location }}</p>
-<p>Start date: {{ event.start_date }}</p>
-<p>Starts at: {{ event.start_time }}</p>
-<p>Ends at: {{ event.end_time }}</p>
-<p>Located at: {{ event.venue }}</p>
-{% for event in event.categories.all %}
+<ul>
+    <li<><p>Location: {{ event.location }}</p></li>
+    <li<><p>Venue: {{ event.venue }}</p></li>
+    <li<><p>Starts at: {{ event.start_time }}</p></li>
+    <li<><p>Ends at: {{ event.end_time }}</p></li>
+</ul>
+
+
+<p>Suited for: {% for event in event.categories.all %}</p>
 <p>{{ event.name }}</p>
 {% endfor %}
 
