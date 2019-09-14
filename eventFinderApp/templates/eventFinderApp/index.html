@@ -1,4 +1,4 @@
-{% extends "./base.html" %}
+{% extends "base.html" %}
 
 {% block content %}
 
@@ -8,11 +8,12 @@
         {% for event in events_list %}
             {% include "./detailsBox.html" with event=event %}
         {% endfor %}
-        <h2 class="title">Can't find what you're looking for?</h2>
         
     {% else %}
         <p>No current events are available.</p>
     {% endif %}
+
+        <h2 class="title">Can't find what you're looking for?</h2>
 
     <a href="{% url 'eventFinderApp:addevent' %}"> <button id="new-event">+ Add an new event</button></a>
 

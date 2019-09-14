@@ -125,3 +125,10 @@ class AddEventCreateView(generic.CreateView):
     success_url = reverse_lazy('eventFinderApp:index')
     # we have to use reverse_lazy so that urls.py can load our class
     # and not get stuck in a recursive loop 
+
+class AddEventCreateView(generic.CreateView):
+    # using the create view we can just give it the variables 
+    # as the functionaity is already built in!
+    form_class = EventForm
+    template_name = 'eventFinderApp/addevent.html'
+    success_url = reverse_lazy('eventFinderApp:index')
