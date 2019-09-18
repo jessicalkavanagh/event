@@ -2,6 +2,12 @@
 
 {% block content %}
 
-You should put the user's account information and upcoming events here.
+<div class="container">
+    <h3>Account details</h3>
+    <p>Email: {{ user.email }}</p>
+    <p>Username: {{ user.username }}</p>
+    <br>
+    <h3>Your events</h3>
+</div>
 
 {% endblock %}

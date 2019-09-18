@@ -123,6 +123,15 @@ footer {
     border-color: #FE595E;
   }
 
+.btn-signup {
+    color: #fff;
+    background-color: #FE595E;
+    border-color: #FE595E;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
 
 ul {
     text-align: left;

@@ -2,7 +2,7 @@
 
 {% block content %}
 
-
+<div class="container">
     <h2 class="title">Upcoming events</h2>
     {% if events_list %}
         {% for event in events_list %}
@@ -12,11 +12,20 @@
     {% else %}
         <p>No current events are available.</p>
     {% endif %}
-
-        <h2 class="title">Can't find what you're looking for?</h2>
-
+<br>
+    {% if user.is_authenticated %}
+    <h2 class="title">Can't find what you're looking for?</h2>
     <a href="{% url 'eventFinderApp:addevent' %}"> <button id="new-event">+ Add an new event</button></a>
+    
+    {% else %}
+    <h2 class="title">Can't find what you're looking for?</h2><br>
+    <p class="text-center">Please <a href="{% url 'login' %}"> sign in</a>  to add an event.</p>
 
+    <p class="text-center">Don't have an account? Sign up now!</p>
+      <a class="btn btn-signup" href="{% url 'users:register' %}">Sign up</a>
+      </div>
+    
+{% endif %}
 
 {% endblock %}
 

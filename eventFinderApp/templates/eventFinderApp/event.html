@@ -2,6 +2,8 @@
 
 {% block content %}
 
+<div class="container">
+
 <h2>{{ event.title }}</h2>
 
 <ul>
@@ -14,8 +16,9 @@
     <li><p>Best suited for: {% for event in event.categories.all %}</p></li>
     {{ event.name }}</p></li>
     {% endfor %}
-
 </ul>
+
+</div>
 
 
 {% endblock %}
