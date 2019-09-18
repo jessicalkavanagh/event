@@ -1,11 +1,16 @@
 <div class="container">
 <div class="details-box">
     <a href="{% url 'eventFinderApp:event' event.id %}">
-        <h3>Event: {{ event.title }}</h3>
+        <h4>Event: {{ event.title }}</h4>
+        <br>
         <p>Location: {{ event.location }}</p>
         <p>Venue: {{ event.venue }}</p>
         <p>Start date and time: {{ event.start_time }}</p>
         <p>End date and time: {{ event.end_time }}</p>
+
+        <h3>Created by: {{ event.host.username }}</h3>
+
+        
     </a>
 </div>
 </div>

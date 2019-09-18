@@ -19,6 +19,11 @@
             <div class="container">
                 <h1>Eventseeker</h1>
                 <h2>The free event guide</h2>
+                <br>
+                {% if user.is_authenticated %}
+                <h5>Hello {{ user.username }}!</h5>                
+                {% else %}
+                {% endif %}
             </div>
             {% include './nav.html' %}
         </header>

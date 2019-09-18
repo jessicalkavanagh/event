@@ -6,6 +6,9 @@
 
 <h2>{{ event.title }}</h2>
 
+<h3>Host: {{ event.host.username }}</h3>
+
+
 <ul>
     <li><p>Location: {{ event.location }}</p></li>
     <li><p>Venue: {{ event.venue }}</p></li>
@@ -14,7 +17,7 @@
 
 
     <li><p>Best suited for: {% for event in event.categories.all %}</p></li>
-    {{ event.name }}</p></li>
+    {{ event.name }}</p>
     {% endfor %}
 </ul>
 
