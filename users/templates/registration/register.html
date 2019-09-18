@@ -1,5 +1,15 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<body>
+{% load crispy_forms_tags %}
 <form method="post" novalidate>
    {% csrf_token %}
-   {{ form.as_p }}
-   <button type="submit" value="Update" class="btn btn-primary">Register</button>
+   {{ form|crispy }}
+
+   <button type="submit" value="Update" class="btn btn-primary">Sign up</button>
  </form>
+</body>
+
+ {% endblock %}

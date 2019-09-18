@@ -117,6 +117,12 @@ footer {
     border-radius: 5px;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #FE595E;
+    border-color: #FE595E;
+  }
+
 
 ul {
     text-align: left;
