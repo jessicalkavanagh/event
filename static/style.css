@@ -29,7 +29,6 @@ h3 {
 h5 {
     color:#17445C;
     font-size: 20px;
-    font-family: 'Bungee Shade';
 }
 
 .title {
@@ -143,4 +142,33 @@ footer {
 
 ul {
     text-align: left;
+}
+
+
+  /*Smartphone*/
+
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+
+    h1 { 
+        font-size: 33px;
+        font-family: 'Bungee Shade';
+        color: #17445C;
+        padding: 2px;
+        margin: 1px;
+    }
+    h5 {
+        color:#17445C;
+        font-size: 20px;
+        margin: 5px;
+        text-align: left;
+    }
+    .title {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        color:#17445C;
+        font-size: 1.4rem;
+    }
 }
