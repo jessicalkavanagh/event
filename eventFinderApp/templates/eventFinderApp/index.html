@@ -21,10 +21,10 @@
     
     {% else %}
     <h2 class="title">Can't find what you're looking for?</h2><br>
-    <p class="text-center">Please <a href="{% url 'login' %}"> sign in</a>  to add an event.</p>
+    <p class="text-center">Please <a href="{% url 'login' %}"> login</a>  to add an event.</p>
 
     <p class="text-center">Don't have an account? Sign up now!</p>
-      <a class="btn btn-signup" href="{% url 'users:register' %}">Sign up</a>
+    <a href="{% url 'users:register' %}"> <button id="new-event"> Sign up</button></a>
 </div>
     
 {% endif %}
