@@ -3,10 +3,11 @@
     <a href="{% url 'eventFinderApp:event' event.id %}">
         <h4>{{ event.title }}</h4>
         <br>
+        <p>{{ event.name }}</p></li>
         <p>Location: {{ event.location }}</p>
         <p>Venue: {{ event.venue }}</p>
-        <p>Start date and time: {{ event.start_time }}</p>
-        <p>End date and time: {{ event.end_time }}</p>
+        <p>Date: {{ event.start_date }} - {{ event.end_date }}</p>
+        <p>Time: {{ event.start_time }} - {{ event.end_time }}</p>
 
         <h3>This event was added by: {{ event.host.username }}</h3>
 
